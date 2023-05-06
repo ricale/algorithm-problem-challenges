@@ -1,5 +1,4 @@
 function solution(N, K) {
-  console.info({ N, K });
   const k = +K;
 
   if (N.length < k) {
@@ -16,8 +15,6 @@ function solution(N, K) {
     }
   }
 
-  console.info({ checkedCount });
-
   if (checkedCount === k) {
     console.log(N);
     return;
@@ -30,35 +27,41 @@ function solution(N, K) {
       checkedCount -= 1;
     }
 
-    console.info({ i });
-
     for (let cand = n + 1; cand <= 9; cand++) {
       checked[cand] += 1;
       if (checked[cand] === 1) {
         checkedCount += 1;
       }
 
-      console.info({ cand, checkedCount });
-
       if (checkedCount === k) {
-        // 같은 거 처리
         const filled = `${checked.findIndex((it) => it > 0)}`.repeat(
           N.length - i - 1
         );
         console.log(`${N.slice(0, i)}${cand}${filled}`);
         return;
-      } else if (checkedCount > k) {
-      } else {
-        if (k - checkedCount === N.length - i) {
-          const filled = [...new Array(k - checkedCount)]
-            .map(() => {
-              const res = checked.findIndex((it) => it === 0);
+      } else if (checkedCount < k) {
+        const restLen = N.length - (i + 1);
+
+        if (k - checkedCount <= restLen) {
+          let result = `${N.slice(0, i)}${cand}`;
+
+          for (let j = 0; j < restLen; j++) {
+            const checkedMin = checked.findIndex((it) => it > 0);
+            if (checkedCount === k) {
+              result = `${result}${checkedMin}`;
+              continue;
+            }
+            const res = checked.findIndex((it) => it === 0);
+            if (res > checkedMin && k - checkedCount < restLen - j) {
+              result = `${result}${checkedMin}`;
+            } else {
               checked[res] += 1;
               checkedCount += 1;
-              return res;
-            })
-            .join("");
-          console.log(`${N.slice(0, i - 1)}${cand}${filled}`);
+              result = `${result}${res}`;
+            }
+          }
+
+          console.log(result);
           return;
         }
       }
