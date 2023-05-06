@@ -2,7 +2,7 @@ function isValid(source, answer) {
   return +source.slice(0, answer.length) <= +answer.join("");
 }
 
-function getAnswer(source, k, answer = [], used = []) {
+function getAnswer(source, k, answer = [], used = 0) {
   // console.log(k, { used, answer });
   if (source.length === answer.length) {
     if (k > 0) {
@@ -17,15 +17,10 @@ function getAnswer(source, k, answer = [], used = []) {
       if (!isValid(source, newAnswer)) {
         continue;
       }
-      const usedAlready = used.includes(n);
+      const usedAlready = used & (1 << n);
       const result = usedAlready
         ? getAnswer(source, k, newAnswer, used)
-        : getAnswer(
-            source,
-            k - 1,
-            newAnswer,
-            [...used, n].sort((a, b) => a - b)
-          );
+        : getAnswer(source, k - 1, newAnswer, used | (1 << n));
 
       if (result) {
         return result;
@@ -33,7 +28,11 @@ function getAnswer(source, k, answer = [], used = []) {
     }
     return null;
   } else {
-    for (let n of used) {
+    for (let n = 0; n <= 9; n++) {
+      if (!(used & (1 << n))) {
+        continue;
+      }
+
       const newAnswer = [...answer, n];
       if (!isValid(source, newAnswer)) {
         continue;
