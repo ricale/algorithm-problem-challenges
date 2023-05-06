@@ -1,69 +1,78 @@
-function isValid(source, answer) {
-  return +source.slice(0, answer.length) <= +answer.join("");
-}
-
-function getAnswer(source, k, answer = [], used = 0) {
-  // console.log(k, { used, answer });
-  if (source.length === answer.length) {
-    if (k > 0) {
-      return null;
-    }
-    return answer;
-  }
-
-  if (k > 0) {
-    for (let n = 0; n <= 9; n++) {
-      const newAnswer = [...answer, n];
-      if (!isValid(source, newAnswer)) {
-        continue;
-      }
-      const usedAlready = used & (1 << n);
-      const result = usedAlready
-        ? getAnswer(source, k, newAnswer, used)
-        : getAnswer(source, k - 1, newAnswer, used | (1 << n));
-
-      if (result) {
-        return result;
-      }
-    }
-    return null;
-  } else {
-    for (let n = 0; n <= 9; n++) {
-      if (!(used & (1 << n))) {
-        continue;
-      }
-
-      const newAnswer = [...answer, n];
-      if (!isValid(source, newAnswer)) {
-        continue;
-      }
-      const result = getAnswer(source, 0, newAnswer, used);
-      if (result) {
-        return result;
-      }
-    }
-
-    return null;
-  }
-}
-
 function solution(N, K) {
-  // console.log(">>>>>", { N, K });
+  console.info({ N, K });
   const k = +K;
 
-  if (k > N.length) {
-    const result = getAnswer(`1${"0".repeat(k - 1)}`, k);
-    console.log(result.join(""));
+  if (N.length < k) {
+    console.log("1023456789".slice(0, k));
     return;
   }
 
-  const result = getAnswer(N, k);
-  if (result) {
-    console.log(result.join(""));
+  const checked = new Array(10).fill(0);
+  let checkedCount = 0;
+  for (let i = 0; i < N.length; i++) {
+    checked[+N[i]] += 1;
+    if (checked[+N[i]] === 1) {
+      checkedCount += 1;
+    }
+  }
+
+  console.info({ checkedCount });
+
+  if (checkedCount === k) {
+    console.log(N);
     return;
   }
 
-  console.log(getAnswer(`1${"0".repeat(N.length - 1)}`, k).join(""));
+  for (let i = N.length - 1; i >= 0; i--) {
+    const n = +N[i];
+    checked[n] -= 1;
+    if (!checked[n]) {
+      checkedCount -= 1;
+    }
+
+    console.info({ i });
+
+    for (let cand = n + 1; cand <= 9; cand++) {
+      checked[cand] += 1;
+      if (checked[cand] === 1) {
+        checkedCount += 1;
+      }
+
+      console.info({ cand, checkedCount });
+
+      if (checkedCount === k) {
+        // 같은 거 처리
+        const filled = `${checked.findIndex((it) => it > 0)}`.repeat(
+          N.length - i - 1
+        );
+        console.log(`${N.slice(0, i)}${cand}${filled}`);
+        return;
+      } else if (checkedCount > k) {
+      } else {
+        if (k - checkedCount === N.length - i) {
+          const filled = [...new Array(k - checkedCount)]
+            .map(() => {
+              const res = checked.findIndex((it) => it === 0);
+              checked[res] += 1;
+              checkedCount += 1;
+              return res;
+            })
+            .join("");
+          console.log(`${N.slice(0, i - 1)}${cand}${filled}`);
+          return;
+        }
+      }
+
+      checked[cand] -= 1;
+      if (!checked[cand]) {
+        checkedCount -= 1;
+      }
+    }
+  }
+
+  const length = N.length + 1;
+
+  console.log(`1${"0".repeat(length - (k - 1))}23456789`.slice(0, length));
 }
 
 //////
