@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11382
+- title: 꼬마 정민
