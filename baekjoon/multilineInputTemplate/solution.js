@@ -7,23 +7,32 @@ function solution() {
 // input
 
 const fs = require("fs");
-const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
+const isLocal = process.platform !== "linux";
+const filePath = isLocal ? "./input.txt" : "/dev/stdin";
 const input = fs.readFileSync(filePath).toString();
 
-const cases = input
-  .split("\n")
-  .filter((it) => !!it)
-  .reduce((acc, it, i) => {
-    const splitted = it.trim().split(" ");
-    const index = Math.floor(i / 2);
-    if (!acc[index]) {
-      acc[index] = [];
-    }
-    acc[index].push(...splitted);
+if (isLocal) {
+  const cases = input
+    .split("\n")
+    .filter((it) => !!it)
+    .reduce((acc, it, i) => {
+      const splitted = it.trim().split(" ");
+      const index = Math.floor(i / 2);
+      if (!acc[index]) {
+        acc[index] = [];
+      }
+      acc[index].push(...splitted);
 
-    return acc;
-  }, []);
+      return acc;
+    }, []);
 
-cases.forEach((it) => {
-  solution(...it);
-});
+  cases.forEach((it) => {
+    solution(...it);
+  });
+} else {
+  solution(
+    ...input
+      .split("\n")
+      .reduce((acc, it) => [...acc, ...it.trim().split(" ")], [])
+  );
+}
