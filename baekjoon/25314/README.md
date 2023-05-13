@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/25314
+- title: 코딩은 체육과목 입니다

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/25304
+- title: 영수증
