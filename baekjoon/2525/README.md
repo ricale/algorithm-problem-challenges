@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2525
+- title: 오븐 시계
