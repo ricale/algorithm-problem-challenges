@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10818
+- title: 최소, 최대

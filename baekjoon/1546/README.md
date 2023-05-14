@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1546
+- title: 평균

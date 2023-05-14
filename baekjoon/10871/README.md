@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10871
+- title: X보다 작은 수
