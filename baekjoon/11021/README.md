@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11021
+- title: A+B - 7
