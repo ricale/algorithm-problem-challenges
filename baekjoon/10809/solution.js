@@ -1,5 +1,15 @@
-function solution() {
-  // code
+function solution(str) {
+  const pos = new Array(26).fill(-1);
+
+  let aIdx = "a".charCodeAt();
+  for (let i = 0; i < str.length; i++) {
+    const idx = str[i].charCodeAt() - aIdx;
+    if (pos[idx] === -1) {
+      pos[idx] = i;
+    }
+  }
+
+  console.log(pos.join(" "));
 }
 
 //////

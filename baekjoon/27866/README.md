@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/27866
+- title: 문자와 문자열

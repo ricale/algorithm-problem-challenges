@@ -1,5 +1,5 @@
-function solution() {
-  // code
+function solution(str) {
+  console.log(str === "" ? 0 : str.trim().split(" ").length);
 }
 
 //////
@@ -14,12 +14,12 @@ const input = fs.readFileSync(filePath).toString().trim();
 if (isLocal) {
   const cases = input
     .split("\n")
-    .filter((it) => !!it)
-    .map((it) => it.trim().split(" "));
+    // .filter((it) => !!it)
+    .map((it) => it);
 
   cases.forEach((it) => {
-    solution(...it);
+    solution(it);
   });
 } else {
-  solution(...input.trim().split(" "));
+  solution(input);
 }

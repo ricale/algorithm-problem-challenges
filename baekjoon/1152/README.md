@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1152
+- title: 단어의 개수

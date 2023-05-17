@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2675
+- title: 문자열 반복

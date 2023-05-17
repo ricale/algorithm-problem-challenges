@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11720
+- title: 숫자의 합

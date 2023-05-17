@@ -1,5 +1,5 @@
-function solution() {
-  // code
+function solution(char) {
+  console.log(`${char}`.trim().charCodeAt());
 }
 
 //////
@@ -21,5 +21,5 @@ if (isLocal) {
     solution(...it);
   });
 } else {
-  solution(...input.trim().split(" "));
+  solution(input.trim().split(" "));
 }
