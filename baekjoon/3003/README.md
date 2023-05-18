@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/3003
+- title: 킹, 퀸, 룩, 비숍, 나이트, 폰

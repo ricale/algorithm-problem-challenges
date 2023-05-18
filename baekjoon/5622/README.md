@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/5622
+- title: 다이얼
