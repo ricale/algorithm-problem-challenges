@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2941
+- title: 크로아티아 알파벳

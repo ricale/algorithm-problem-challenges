@@ -1,5 +1,17 @@
-function solution() {
-  // code
+function solution(rows) {
+  let result = "";
+
+  const maxLength = Math.max(...rows.map((it) => it.length));
+
+  for (let i = 0; i < maxLength; i++) {
+    for (let row of rows) {
+      if (row[i]) {
+        result += row[i];
+      }
+    }
+  }
+
+  console.log(result);
 }
 
 //////
@@ -12,7 +24,7 @@ const filePath = isLocal ? "./input.txt" : "/dev/stdin";
 const input = fs.readFileSync(filePath).toString().trim();
 
 if (isLocal) {
-  const LINE_COUNT = 2;
+  const LINE_COUNT = 5;
   const cases = input
     .split("\n")
     .filter((it) => !!it)

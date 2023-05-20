@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2563
+- title: 색종이

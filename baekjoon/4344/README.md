@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4344
+- title: 평균은 넘겠지

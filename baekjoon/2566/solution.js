@@ -1,5 +1,18 @@
-function solution() {
-  // code
+function solution(rows) {
+  let max = -1;
+  let maxX, maxY;
+  for (let i = 0; i < 9; i++) {
+    for (let j = 0; j < 9; j++) {
+      if (max < +rows[i][j]) {
+        max = rows[i][j];
+        maxX = j;
+        maxY = i;
+      }
+    }
+  }
+
+  console.log(max);
+  console.log(`${maxY + 1} ${maxX + 1}`);
 }
 
 //////
@@ -12,7 +25,7 @@ const filePath = isLocal ? "./input.txt" : "/dev/stdin";
 const input = fs.readFileSync(filePath).toString().trim();
 
 if (isLocal) {
-  const LINE_COUNT = 2;
+  const LINE_COUNT = 9;
   const cases = input
     .split("\n")
     .filter((it) => !!it)

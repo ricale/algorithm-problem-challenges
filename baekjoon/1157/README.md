@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1157
+- title: 단어 공부

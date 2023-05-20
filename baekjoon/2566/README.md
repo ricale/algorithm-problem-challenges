@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2566
+- title: 최댓값

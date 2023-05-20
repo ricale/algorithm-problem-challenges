@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10798
+- title: 세로읽기
