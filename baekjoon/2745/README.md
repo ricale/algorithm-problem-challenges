@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2745
+- title: 진법 변환

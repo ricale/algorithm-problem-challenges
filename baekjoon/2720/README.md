@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2720
+- title: 세탁소 사장 동혁

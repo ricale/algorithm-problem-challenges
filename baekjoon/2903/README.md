@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2903
+- title: 중앙 이동 알고리즘

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1193
+- title: 분수찾기
