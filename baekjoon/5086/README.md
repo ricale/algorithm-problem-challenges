@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/5086
+- title: 배수와 약수

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2501
+- title: 약수 구하기

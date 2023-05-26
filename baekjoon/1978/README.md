@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1978
+- title: 소수 찾기

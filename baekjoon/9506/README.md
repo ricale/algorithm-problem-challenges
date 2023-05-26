@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/9506
+- title: 약수들의 합
