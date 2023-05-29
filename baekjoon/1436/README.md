@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1436
+- title: 영화감독 숌

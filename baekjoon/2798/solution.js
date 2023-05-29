@@ -1,5 +1,32 @@
-function solution() {
-  // code
+function solution([N, M], cards) {
+  const target = +M;
+  const nums = cards.map((it) => +it);
+  const len = nums.length;
+
+  let result = 0;
+
+  for (let i = 0; i < len - 2; i++) {
+    if (nums[i] >= target) {
+      continue;
+    }
+    for (let j = i + 1; j < len - 1; j++) {
+      if (nums[i] + nums[j] >= target) {
+        continue;
+      }
+      for (let k = j + 1; k < len; k++) {
+        const sum = nums[i] + nums[j] + nums[k];
+        if (target === sum) {
+          console.log(target);
+          return;
+        }
+        if (target > sum && result < sum) {
+          result = sum;
+        }
+      }
+    }
+  }
+
+  console.log(result);
 }
 
 //////

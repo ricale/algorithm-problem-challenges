@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2798
+- title: 블랙잭
