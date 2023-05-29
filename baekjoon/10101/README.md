@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10101
+- title: 삼각형 외우기

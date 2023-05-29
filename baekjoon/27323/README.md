@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/27323
+- title: 직사각형

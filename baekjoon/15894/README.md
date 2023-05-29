@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/15894
+- title: 수학은 체육과목 입니다

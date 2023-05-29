@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1085
+- title: 직사각형에서 탈출
