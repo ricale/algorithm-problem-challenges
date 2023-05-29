@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/24313
+- title: 알고리즘 수업 - 점근적 표기 1
