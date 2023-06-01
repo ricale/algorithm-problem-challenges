@@ -1,5 +1,9 @@
 function solution(n, rows) {
-  // code
+  const result = rows
+    .sort((a, b) => (a[1] === b[1] ? a[0] - b[0] : a[1] - b[1]))
+    .map((it) => it.join(" "))
+    .join("\n");
+  console.log(result);
 }
 
 //////
@@ -18,8 +22,10 @@ while (idx < cases.length) {
   const n = +cases[idx];
   const offset = 1;
   const rows = cases.slice(idx + offset, idx + n + offset).map((it) => {
-    const splitted = it.trim().split(" ");
-    return splitted.length === 1 ? splitted[0] : splitted;
+    return it
+      .trim()
+      .split(" ")
+      .map((it) => +it);
   });
   solution(n, rows);
 

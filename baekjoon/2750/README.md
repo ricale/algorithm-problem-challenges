@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2750
+- title: 수 정렬하기

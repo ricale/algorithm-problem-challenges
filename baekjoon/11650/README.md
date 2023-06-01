@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11650
+- title: 좌표 정렬하기

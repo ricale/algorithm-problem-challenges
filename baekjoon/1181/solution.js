@@ -1,5 +1,16 @@
 function solution(n, rows) {
-  // code
+  const result = rows
+    .sort((a, b) =>
+      a.length === b.length ? a.localeCompare(b) : a.length - b.length
+    )
+    .reduce((acc, it) => {
+      if (it !== acc[acc.length - 1]) {
+        acc.push(it);
+      }
+      return acc;
+    }, [])
+    .join("\n");
+  console.log(result);
 }
 
 //////
@@ -18,8 +29,7 @@ while (idx < cases.length) {
   const n = +cases[idx];
   const offset = 1;
   const rows = cases.slice(idx + offset, idx + n + offset).map((it) => {
-    const splitted = it.trim().split(" ");
-    return splitted.length === 1 ? splitted[0] : splitted;
+    return it;
   });
   solution(n, rows);
 

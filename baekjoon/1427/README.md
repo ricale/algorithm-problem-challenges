@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1427
+- title: 소트인사이드

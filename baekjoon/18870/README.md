@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/18870
+- title: 좌표 압축

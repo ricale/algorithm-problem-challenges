@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/25305
+- title: 커트라인
