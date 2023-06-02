@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1269
+- title: 대칭 차집합

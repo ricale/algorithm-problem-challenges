@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/14425
+- title: 문자열 집합

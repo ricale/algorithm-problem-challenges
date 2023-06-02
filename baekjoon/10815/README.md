@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10815
+- title: 숫자 카드
