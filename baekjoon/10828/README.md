@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10828
+- title: 스택

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1874
+- title: 스택 수열

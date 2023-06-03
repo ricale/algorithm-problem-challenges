@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10773
+- title: 제로

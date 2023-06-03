@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4949
+- title: 균형잡힌 세상
