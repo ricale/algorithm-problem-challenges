@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/20920
+- title: 영단어 암기는 괴로워

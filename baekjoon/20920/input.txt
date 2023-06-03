@@ -1,0 +1,22 @@
+7 4
+apple
+ant
+sand
+apple
+append
+sand
+sand
+13 5
+appearance
+append
+attendance
+swim
+swift
+swift
+swift
+mouse
+mouse
+wallet
+mouse
+ice
+age

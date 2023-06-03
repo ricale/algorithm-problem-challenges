@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/26069
+- title: 붙임성 좋은 총총이

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1037
+- title: 약수
