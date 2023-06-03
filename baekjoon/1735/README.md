@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1735
+- title: 분수 합

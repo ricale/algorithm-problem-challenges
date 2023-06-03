@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1929
+- title: 소수 구하기

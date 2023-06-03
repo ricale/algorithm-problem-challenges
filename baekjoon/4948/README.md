@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4948
+- title: 베르트랑 공준

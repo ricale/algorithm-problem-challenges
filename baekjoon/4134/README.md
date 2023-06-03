@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4134
+- title: 다음 소수

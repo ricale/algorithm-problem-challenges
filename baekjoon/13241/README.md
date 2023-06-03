@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/13241
+- title: 최소공배수
