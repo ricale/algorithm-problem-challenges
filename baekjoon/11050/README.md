@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11050
+- title: 이항 계수 1

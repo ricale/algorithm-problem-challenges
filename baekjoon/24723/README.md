@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/24723
+- title: 녹색거탑
