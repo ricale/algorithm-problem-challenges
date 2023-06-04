@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4779
+- title: 칸토어 집합
