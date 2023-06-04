@@ -14,11 +14,11 @@ const input = fs.readFileSync(filePath).toString().trim();
 if (isLocal) {
   const cases = input
     .split("\n")
-    .filter((it) => !!it)
-    .map((it) => it.trim().split(" "));
+    .filter((item) => !!item)
+    .map((item) => item.trim().split(" "));
 
-  cases.forEach((it) => {
-    solution(...it);
+  cases.forEach((item) => {
+    solution(...item);
   });
 } else {
   solution(...input.trim().split(" "));

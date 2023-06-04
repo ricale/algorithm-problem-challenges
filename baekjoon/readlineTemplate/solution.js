@@ -23,9 +23,9 @@ rl.on("line", function (line) {
   input.push(line);
 }).on("close", function () {
   const cases = input
-    .filter((it) => !!it)
-    .reduce((acc, it, i) => {
-      const splitted = it.trim().split(" ");
+    .filter((item) => !!item)
+    .reduce((acc, item, i) => {
+      const splitted = item.trim().split(" ");
       const index = Math.floor(i / 2);
       if (!acc[index]) {
         acc[index] = [];
@@ -35,8 +35,8 @@ rl.on("line", function (line) {
       return acc;
     }, []);
 
-  cases.forEach((it) => {
-    solution(...it);
+  cases.forEach((item) => {
+    solution(...item);
   });
   process.exit();
 });

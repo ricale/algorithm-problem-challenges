@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1966
+- title: 프린터 큐

@@ -13,9 +13,9 @@ const input = fs.readFileSync(filePath).toString().trim();
 
 const cases = input
   .split("\n")
-  .filter((it) => !!it)
-  .map((it) => {
-    const splitted = it.trim().split(" ");
+  .filter((item) => !!item)
+  .map((item) => {
+    const splitted = item.trim().split(" ");
     return splitted.length === 1 ? splitted[0] : splitted;
   });
 solution(cases);
