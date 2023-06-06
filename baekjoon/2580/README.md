@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2580
+- title: 스도쿠
