@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1149
+- title: RGB거리

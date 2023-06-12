@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10844
+- title: 쉬운 계단 수

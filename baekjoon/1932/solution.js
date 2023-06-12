@@ -1,5 +1,11 @@
 function solution(n, rows) {
-  // code
+  for (let i = rows.length - 2; i >= 0; i--) {
+    const row = rows[i];
+    for (let j = 0; j < row.length; j++) {
+      row[j] += Math.max(rows[i + 1][j], rows[i + 1][j + 1]);
+    }
+  }
+  console.log(rows[0][0]);
 }
 
 //////

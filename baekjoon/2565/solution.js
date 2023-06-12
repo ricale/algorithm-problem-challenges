@@ -1,5 +1,21 @@
 function solution(n, rows) {
-  // code
+  const sorted = rows.sort((a, b) => a[0] - b[0]).map((it) => it[1]);
+  const counts = [1];
+
+  let max = 1;
+  for (let i = 1; i < sorted.length; i++) {
+    counts[i] = 1;
+    for (let j = 0; j < i; j++) {
+      if (sorted[j] < sorted[i] && counts[j] + 1 > counts[i]) {
+        counts[i] = counts[j] + 1;
+      }
+    }
+    if (max < counts[i]) {
+      max = counts[i];
+    }
+  }
+
+  console.log(n - max);
 }
 
 //////

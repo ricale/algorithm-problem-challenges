@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2565
+- title: 전깃줄

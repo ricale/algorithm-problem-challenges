@@ -1,5 +1,17 @@
-function solution(...inputs) {
-  // code
+function solution([n], nums) {
+  let max = -Infinity;
+  let subSum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    subSum += nums[i];
+    if (max < subSum) {
+      max = subSum;
+    }
+    if (subSum < 0) {
+      subSum = 0;
+    }
+  }
+
+  console.log(max);
 }
 
 //////

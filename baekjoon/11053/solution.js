@@ -1,5 +1,19 @@
-function solution(...inputs) {
-  // code
+function solution([n], nums) {
+  const counts = [1];
+
+  let max = 1;
+  for (let i = 1; i < n; i++) {
+    let subMax = 0;
+    for (let j = i - 1; j >= 0; j--) {
+      if (nums[j] < nums[i]) {
+        subMax = Math.max(subMax, counts[j]);
+      }
+    }
+    counts[i] = subMax + 1;
+    max = Math.max(max, counts[i]);
+  }
+
+  console.log(max);
 }
 
 //////
