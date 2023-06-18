@@ -1,0 +1,90 @@
+const BASE = BigInt(1_000_000_007);
+
+function initTree(tree, idx, start, end, nums) {
+  if (start === end) {
+    tree[idx] = nums[start];
+    return;
+  }
+
+  const mid = Math.floor((start + end) / 2);
+  initTree(tree, idx * 2, start, mid, nums);
+  initTree(tree, idx * 2 + 1, mid + 1, end, nums);
+  tree[idx] = (tree[idx * 2] * tree[idx * 2 + 1]) % BASE;
+}
+
+function updateTree(tree, idx, start, end, target, value) {
+  if (start > target || target > end) {
+    return;
+  }
+  if (start === end) {
+    tree[idx] = value;
+    return;
+  }
+  const mid = Math.floor((start + end) / 2);
+  updateTree(tree, idx * 2, start, mid, target, value);
+  updateTree(tree, idx * 2 + 1, mid + 1, end, target, value);
+  tree[idx] = (tree[idx * 2] * tree[idx * 2 + 1]) % BASE;
+}
+
+function queryToTree(tree, idx, start, end, left, right) {
+  if (start > right || left > end) {
+    return BigInt(1);
+  }
+  if (left <= start && end <= right) {
+    return tree[idx];
+  }
+  const mid = Math.floor((start + end) / 2);
+  const lRes = queryToTree(tree, idx * 2, start, mid, left, right);
+  const rRes = queryToTree(tree, idx * 2 + 1, mid + 1, end, left, right);
+
+  return (lRes * rRes) % BASE;
+}
+
+function solution(n, m, k, nums, rows) {
+  const tree = [];
+  initTree(tree, 1, 0, n - 1, nums);
+
+  let result = "";
+  for (const [comm, b, c] of rows) {
+    if (comm === 1) {
+      nums[b - 1] = BigInt(c);
+      updateTree(tree, 1, 0, n - 1, b - 1, nums[b - 1]);
+    } else if (comm === 2) {
+      const queried = queryToTree(tree, 1, 0, n - 1, b - 1, c - 1);
+      result += `${queried}\n`;
+    }
+  }
+
+  console.log(result);
+}
+
+//////
+////
+// input
+
+const fs = require("fs");
+const isLocal = process.platform !== "linux";
+const filePath = isLocal ? "./input.txt" : "/dev/stdin";
+const input = fs.readFileSync(filePath).toString().trim();
+
+const cases = input.split("\n").filter((item) => !!item);
+
+let idx = 0;
+while (idx < cases.length) {
+  const [n, m, k] = cases[idx].split(" ").map((it) => +it);
+  const offset = 1;
+  const nums = cases
+    .slice(idx + offset, idx + n + offset)
+    .map((item) => BigInt(item));
+  const rows = cases
+    .slice(idx + n + offset, idx + n + m + k + offset)
+    .map((item) => {
+      return item
+        .trim()
+        .split(" ")
+        .map((it) => +it);
+    });
+  solution(n, m, k, nums, rows);
+
+  idx += n + m + k + offset;
+}

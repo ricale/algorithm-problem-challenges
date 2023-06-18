@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2559
+- title: 수열

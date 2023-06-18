@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10986
+- title: 나머지 합

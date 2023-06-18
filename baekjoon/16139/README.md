@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/16139
+- title: 인간-컴퓨터 상호작용

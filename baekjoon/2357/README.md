@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2357
+- title: 최솟값과 최댓값
