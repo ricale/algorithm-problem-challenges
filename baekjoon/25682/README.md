@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/25682
+- title: 체스판 다시 칠하기 2

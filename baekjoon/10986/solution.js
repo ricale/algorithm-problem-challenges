@@ -1,21 +1,20 @@
 function solution([n, m], nums) {
-  const subSums = [nums[0]];
-  for (let i = 1; i < n; i++) {
-    subSums[i] = subSums[i - 1] + nums[i];
+  const mods = new Array(m).fill(0);
+
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += nums[i];
+    mods[sum % m] += 1;
   }
 
   let result = 0;
-  for (let i = 0; i < n; i++) {
-    const subs = subSums[i - 1] ?? 0;
-    for (let j = i; j < n; j++) {
-      const subSum = subSums[j] - subs;
-      if (subSum % m === 0) {
-        result += 1;
-      }
+  for (const count of mods) {
+    if (count > 1) {
+      result += (count * (count - 1)) / 2;
     }
   }
 
-  console.log(result);
+  console.log(result + mods[0]);
 }
 
 //////
