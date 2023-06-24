@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1541
+- title: 잃어버린 괄호

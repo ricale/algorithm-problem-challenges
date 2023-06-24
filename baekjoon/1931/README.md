@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1931
+- title: 회의실 배정
