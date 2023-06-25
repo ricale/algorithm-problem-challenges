@@ -11,14 +11,6 @@ function solution(n, k, rows) {
     }
   }
 
-  console.log(
-    answers
-      .map((row) =>
-        row.map((it) => `${" ".repeat(3 - `${it}`.length)}${it}`).join("")
-      )
-      .join("\n")
-  );
-
   console.log(answers[n][k]);
 }
 
