@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2475
+- title: 검증수

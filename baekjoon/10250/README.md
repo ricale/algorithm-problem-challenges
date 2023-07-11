@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10250
+- title: ACM 호텔

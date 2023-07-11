@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2920
+- title: 음계
