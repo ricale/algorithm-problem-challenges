@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/6549
+- title: 히스토그램에서 가장 큰 직사각형

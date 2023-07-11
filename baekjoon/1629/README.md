@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1629
+- title: 곱셈

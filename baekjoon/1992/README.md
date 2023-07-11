@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1992
+- title: 쿼드트리
