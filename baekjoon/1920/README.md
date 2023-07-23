@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1920
+- title: 수 찾기
