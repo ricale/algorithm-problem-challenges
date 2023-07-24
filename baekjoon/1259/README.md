@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1259
+- title: 팰린드롬수

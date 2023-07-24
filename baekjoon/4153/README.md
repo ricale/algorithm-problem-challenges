@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4153
+- title: 직각삼각형

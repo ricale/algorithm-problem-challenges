@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10845
+- title: 큐
