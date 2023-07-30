@@ -1,8 +1,32 @@
 function solution(n, rows) {
-  for (let i = 0; i < n; i++) {
-    const chapters = rows[i * 2 + 1];
-    console.log("chapters", chapters);
+  let result = "";
+  for (let i = 0; i < rows.length; i += 2) {
+    const [k, files] = [rows[i][0], rows[i + 1]];
+    const sums = [0];
+    for (let i = 1; i <= files.length; i++) {
+      sums[i] = sums[i - 1] + files[i - 1];
+    }
+
+    const answers = [...new Array(k + 1)].map(() => new Array(k + 1).fill(0));
+
+    for (let l = 1; l < k; l++) {
+      for (let start = 1; start <= k - l; start++) {
+        let end = start + l;
+        answers[start][end] = Infinity;
+
+        for (let mid = start; mid < end; mid++) {
+          answers[start][end] = Math.min(
+            answers[start][end],
+            answers[start][mid] +
+              answers[mid + 1][end] +
+              (sums[end] - sums[start - 1])
+          );
+        }
+      }
+    }
+    result += `${answers[1][k]}\n`;
   }
+  console.log(result);
 }
 
 //////

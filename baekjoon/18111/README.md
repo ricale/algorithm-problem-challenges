@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/18111
+- title: 마인크래프트

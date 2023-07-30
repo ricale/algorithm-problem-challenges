@@ -1,2 +1,2 @@
-- url:
-- title:
+- url: https://www.acmicpc.net/problem/1676
+- title: 팩토리얼 0의 개수

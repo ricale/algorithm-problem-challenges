@@ -1,5 +1,19 @@
-function solution() {
-  // code
+const M = 100000000;
+
+function solution(n) {
+  let result = 0;
+  let num = 1;
+  for (let i = 1; i <= n; i++) {
+    num = (num * i) % M;
+    const hasZero = `${num}`.match(/0+$/);
+    if (hasZero) {
+      const count = hasZero[0].length;
+      result += count;
+      num = +`${num}`.slice(0, -count);
+    }
+  }
+
+  console.log(result);
 }
 
 //////
