@@ -1,35 +1,17 @@
 function solution([count], weights, [n], cases) {
+  const answers = new Set([0]);
+
+  for (const weight of weights) {
+    const currentAnswers = [...answers];
+    for (const answer of currentAnswers) {
+      answers.add(Math.floor(answer - weight));
+      answers.add(answer + weight);
+    }
+  }
+
   let result = "";
   for (const target of cases) {
-    if (weights[0] === target) {
-      result += "Y ";
-      continue;
-    }
-    let subres = undefined;
-
-    const answers = new Set([0, weights[0]]);
-
-    for (let i = 1; i < count && subres === undefined; i++) {
-      const weight = weights[i];
-      const subanswers = [];
-      for (const item of answers) {
-        if (item + weight === target) {
-          subres = true;
-          break;
-        }
-        subanswers.push(item + weight);
-
-        if (Math.abs(item - weight) === target) {
-          subres = true;
-          break;
-        }
-        subanswers.push(Math.abs(item - weight));
-      }
-
-      subanswers.forEach((it) => answers.add(it));
-    }
-
-    result += subres ? "Y " : "N ";
+    result += answers.has(target) ? "Y " : "N ";
   }
   console.log(result);
 }

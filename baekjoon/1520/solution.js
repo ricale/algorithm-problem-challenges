@@ -1,53 +1,30 @@
-function solution(n, m, rows) {
-  const counts = [...new Array(n + 1)].map(() => new Array(m + 1).fill(0));
-  counts[1][1] = 1;
+function dp(rows, answers, x, y) {
+  if (answers[y][x] !== -1) {
+    return answers[y][x];
+  }
 
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= m; j++) {
-      if (i === 1 && j === 1) {
-        continue;
-      }
-
-      const current = rows[i - 1][j - 1];
-      const above = rows[i - 2]?.[j - 1] ?? 0;
-      const left = rows[i - 1]?.[j - 2] ?? 0;
-      const below = rows[i]?.[j - 1] ?? 0;
-      const right = rows[i - 1]?.[j] ?? 0;
-
-      if (current < above) counts[i][j] += 1;
-      if (current < left) counts[i][j] += 1;
-      if (current < below) counts[i][j] += 1;
-      if (current < right) counts[i][j] += 1;
-
-      // if (i === 1 && j === 1) {
-      //   continue;
-      // }
-
-      // const current = rows[i - 1]?.[j - 1];
-
-      // const above = rows[i - 2]?.[j - 1] ?? 0;
-      // if (current < above) {
-      //   counts[i][j] += counts[i - 1][j];
-      // }
-
-      // const left = rows[i - 1]?.[j - 2] ?? 0;
-      // if (current < left) {
-      //   counts[i][j] += counts[i][j - 1];
-      // }
-
-      // const below = rows[i]?.[j - 1] ?? 0;
-      // if (current < below) {
-      //   counts[i][j] += counts[i + 1][j];
-      // }
-
-      // const right = rows[i - 1]?.[j] ?? 0;
-      // if (current < right) {
-      //   counts[i][j] += counts[i][j + 1];
-      // }
+  answers[y][x] = 0;
+  const current = rows[y][x];
+  const cands = [
+    [y - 1, x],
+    [y + 1, x],
+    [y, x - 1],
+    [y, x + 1],
+  ];
+  for (let [y2, x2] of cands) {
+    if (rows[y2]?.[x2] !== undefined && current > rows[y2][x2]) {
+      answers[y][x] += dp(rows, answers, x2, y2);
     }
   }
 
-  console.log(counts.join("\n"));
+  return answers[y][x];
+}
+
+function solution(n, m, rows) {
+  const answers = [...new Array(n)].map(() => new Array(m).fill(-1));
+  answers[n - 1][m - 1] = 1;
+  dp(rows, answers, 0, 0);
+  console.log(answers[0][0]);
 }
 
 //////
