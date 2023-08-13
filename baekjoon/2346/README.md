@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2346
+- title: 풍선 터뜨리기

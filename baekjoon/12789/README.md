@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/12789
+- title: 도키도키 간식드리미

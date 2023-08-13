@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11723
+- title: 집합

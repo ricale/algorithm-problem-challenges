@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/7579
+- title: 앱
