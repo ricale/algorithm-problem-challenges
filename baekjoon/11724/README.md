@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11724
+- title: 연결 요소의 개수

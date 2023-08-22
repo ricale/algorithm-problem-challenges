@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/14940
+- title: 쉬운 최단거리

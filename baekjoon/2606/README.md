@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2606
+- title: 바이러스

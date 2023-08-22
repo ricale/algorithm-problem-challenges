@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/9935
+- title: 문자열 폭발

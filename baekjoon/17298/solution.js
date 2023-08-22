@@ -1,25 +1,22 @@
-function solution([n, m], memories, costs) {
-  const availableCosts = costs.reduce((acc, it) => acc + it, 0);
-  const result = [...new Array(availableCosts + 1)].map(() =>
-    new Array(n + 1).fill(0)
-  );
+function solution([n], nums) {
+  const answers = new Array(n).fill(-1);
+  const stack = [{ idx: 0, value: nums[0] }];
 
-  for (let i = 0; i <= availableCosts; i++) {
-    for (let j = 1; j <= n; j++) {
-      const memory = memories[j - 1];
-      const cost = costs[j - 1];
-      result[i][j] = Math.max(
-        result[i][j - 1],
-        i > 0 ? result[i - 1][j] : 0,
-        i >= cost ? result[i - cost][j - 1] + memory : 0
-      );
-
-      if (result[i][j] >= m) {
-        console.log(i);
-        return;
+  for (let i = 1; i < nums.length; i++) {
+    const value = nums[i];
+    while (stack.length > 0) {
+      const top = stack[stack.length - 1];
+      if (top.value < value) {
+        const popped = stack.pop();
+        answers[popped.idx] = value;
+      } else {
+        break;
       }
     }
+    stack.push({ idx: i, value });
   }
+
+  console.log(answers.join(" "));
 }
 
 //////
@@ -39,7 +36,7 @@ const mapper = (item) => {
 };
 
 if (isLocal) {
-  const LINE_COUNT = 3;
+  const LINE_COUNT = 2;
   const cases = input
     .split("\n")
     .filter((item) => !!item)

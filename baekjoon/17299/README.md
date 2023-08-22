@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/17299
+- title: 오등큰수

@@ -1,25 +1,30 @@
-function solution([n, m], memories, costs) {
-  const availableCosts = costs.reduce((acc, it) => acc + it, 0);
-  const result = [...new Array(availableCosts + 1)].map(() =>
-    new Array(n + 1).fill(0)
-  );
+function solution([n], nums) {
+  const counts = new Map();
 
-  for (let i = 0; i <= availableCosts; i++) {
-    for (let j = 1; j <= n; j++) {
-      const memory = memories[j - 1];
-      const cost = costs[j - 1];
-      result[i][j] = Math.max(
-        result[i][j - 1],
-        i > 0 ? result[i - 1][j] : 0,
-        i >= cost ? result[i - cost][j - 1] + memory : 0
-      );
+  for (const num of nums) {
+    counts.set(num, (counts.get(num) ?? 0) + 1);
+  }
 
-      if (result[i][j] >= m) {
-        console.log(i);
-        return;
+  const stack = [0];
+  for (let i = 1; i < n; i++) {
+    while (stack.length > 0) {
+      const idx = stack[stack.length - 1];
+      const num = nums[idx];
+      if (counts.get(num) < counts.get(nums[i])) {
+        stack.pop();
+        nums[idx] = nums[i];
+      } else {
+        break;
       }
     }
+    stack.push(i);
   }
+
+  while (stack.length > 0) {
+    nums[stack.pop()] = -1;
+  }
+
+  console.log(nums.join(" "));
 }
 
 //////
@@ -39,7 +44,7 @@ const mapper = (item) => {
 };
 
 if (isLocal) {
-  const LINE_COUNT = 3;
+  const LINE_COUNT = 2;
   const cases = input
     .split("\n")
     .filter((item) => !!item)

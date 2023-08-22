@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/17298
+- title: 오큰수
