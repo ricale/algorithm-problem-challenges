@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2178
+- title: 미로 탐색

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/16928
+- title: 뱀과 사다리 게임

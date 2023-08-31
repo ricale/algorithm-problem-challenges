@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1697
+- title: 숨바꼭질

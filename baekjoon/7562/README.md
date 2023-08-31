@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/7562
+- title: 나이트의 이동

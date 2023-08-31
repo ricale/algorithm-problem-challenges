@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2667
+- title: 단지번호붙이기

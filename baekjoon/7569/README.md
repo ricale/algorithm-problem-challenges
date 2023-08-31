@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/7569
+- title: 토마토

@@ -1,0 +1,2 @@
+- url: 토마토
+- title: https://www.acmicpc.net/problem/7576
