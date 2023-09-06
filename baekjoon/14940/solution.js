@@ -14,28 +14,37 @@ function solution(n, m, rows) {
   const [i, j] = find2(n, m, rows);
 
   answers[i][j] = 0;
-  const stack = [[i, j]];
+  const queue = [[i, j]];
+  let qidx = 0;
 
-  while (stack.length > 0) {
-    const [y, x] = stack.pop();
+  while (queue.length > qidx) {
+    const [y, x] = queue[qidx++];
     const value = answers[y][x] + 1;
 
-    const nearPoses = [
+    const nexts = [
       [y - 1, x],
       [y + 1, x],
       [y, x - 1],
       [y, x + 1],
     ];
 
-    for (const [ny, nx] of nearPoses) {
+    for (const [ny, nx] of nexts) {
       const tile = rows[ny]?.[nx];
       if (tile === 1) {
-        if (answers[ny][nx] === -1 || answers[ny][nx] > value) {
+        if (answers[ny][nx] === -1) {
           answers[ny][nx] = value;
-          stack.push([ny, nx]);
+          queue.push([ny, nx]);
         }
       } else if (tile === 0) {
         answers[ny][nx] = 0;
+      }
+    }
+  }
+
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < m; j++) {
+      if (rows[i][j] === 0) {
+        answers[i][j] = 0;
       }
     }
   }
