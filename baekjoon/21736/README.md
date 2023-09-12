@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/21736
+- title: 헌내기는 친구가 필요해

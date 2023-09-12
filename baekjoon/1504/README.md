@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1504
+- title: 특정한 최단 경로

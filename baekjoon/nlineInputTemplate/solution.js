@@ -15,15 +15,14 @@ const cases = input.split("\n").filter((item) => !!item);
 
 let idx = 0;
 while (idx < cases.length) {
-  const n = +cases[idx];
-  const offset = 1;
-  const rows = cases.slice(idx + offset, idx + n + offset).map((item) => {
+  const n = +cases[idx++];
+  const rows = cases.slice(idx, idx + n).map((item) => {
     return item
       .trim()
       .split(" ")
       .map((it) => +it);
   });
-  solution(n, rows);
+  idx += n;
 
-  idx += n + offset;
+  solution(n, rows);
 }
