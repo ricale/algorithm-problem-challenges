@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1389
+- title: 케빈 베이컨의 6단계 법칙

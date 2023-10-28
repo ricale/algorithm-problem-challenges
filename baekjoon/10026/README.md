@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10026
+- title: 적록색약

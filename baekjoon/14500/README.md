@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/14500
+- title: 테트로미노
