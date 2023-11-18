@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1806
+- title: 부분합

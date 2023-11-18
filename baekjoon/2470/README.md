@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2470
+- title: 두 용액
