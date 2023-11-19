@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1450
+- title: 냅색문제

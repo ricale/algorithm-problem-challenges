@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1271
+- title: 엄청난 부자2
