@@ -1,2 +1,2 @@
-- url:
-- title:
+- url: https://www.acmicpc.net/problem/1707
+- title: 이분 그래프

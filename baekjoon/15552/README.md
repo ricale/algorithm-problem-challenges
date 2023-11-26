@@ -1,2 +1,2 @@
-- url:
-- title:
+- url: https://www.acmicpc.net/problem/15552
+- title: 빠른 A+B

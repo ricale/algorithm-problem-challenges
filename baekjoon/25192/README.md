@@ -1,2 +1,2 @@
-- url:
-- title:
+- url: https://www.acmicpc.net/problem/25192
+- title: 인사성 밝은 곰곰이

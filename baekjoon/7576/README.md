@@ -1,2 +1,2 @@
-- url: 토마토
-- title: https://www.acmicpc.net/problem/7576
+- url: https://www.acmicpc.net/problem/7576
+- title: 토마토

@@ -1,2 +1,2 @@
-- url:
-- title:
+- url: https://www.acmicpc.net/problem/25206
+- title: 너의 평점은

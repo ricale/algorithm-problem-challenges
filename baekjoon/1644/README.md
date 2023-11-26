@@ -1,2 +1,2 @@
-- url:
-- title:
+- url: https://www.acmicpc.net/problem/1644
+- title: 소수의 연속합

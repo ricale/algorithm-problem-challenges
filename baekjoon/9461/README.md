@@ -1,2 +1,2 @@
-- url: 파도반 수열
-- title: https://www.acmicpc.net/problem/9461
+- url: https://www.acmicpc.net/problem/9461
+- title: 파도반 수열
