@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2420
+- title: 사파리월드

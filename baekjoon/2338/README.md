@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2338
+- title: 긴자리 계산
