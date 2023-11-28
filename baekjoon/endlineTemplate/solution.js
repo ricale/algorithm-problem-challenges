@@ -15,7 +15,9 @@ const cases = input
   .split("\n")
   .filter((item) => !!item)
   .map((item) => {
-    const splitted = item.trim().split(" ");
-    return splitted.length === 1 ? splitted[0] : splitted;
+    return item
+      .trim()
+      .split(" ")
+      .map((it) => +it);
   });
 solution(cases);
