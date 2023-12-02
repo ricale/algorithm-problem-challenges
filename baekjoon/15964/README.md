@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/15964
+- title: 이상한 기호

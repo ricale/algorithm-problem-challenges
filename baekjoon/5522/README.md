@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/5522
+- title: 카드 게임
