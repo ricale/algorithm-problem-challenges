@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11725
+- title: 트리의 부모 찾기
