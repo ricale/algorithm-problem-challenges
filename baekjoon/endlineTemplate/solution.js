@@ -11,7 +11,7 @@ const isLocal = process.platform !== "linux";
 const filePath = isLocal ? "./input.txt" : "/dev/stdin";
 const input = fs.readFileSync(filePath).toString().trim();
 
-const cases = input
+const rows = input
   .split("\n")
   .filter((item) => !!item)
   .map((item) => {
@@ -20,4 +20,4 @@ const cases = input
       .split(" ")
       .map((it) => +it);
   });
-solution(cases);
+solution(rows);

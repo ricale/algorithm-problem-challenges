@@ -20,7 +20,7 @@ const mapper = (item) => {
 
 if (isLocal) {
   const LINE_COUNT = 2;
-  const cases = input
+  const rows = input
     .split("\n")
     .filter((item) => !!item)
     .reduce((acc, item, i) => {
@@ -33,7 +33,7 @@ if (isLocal) {
       return acc;
     }, []);
 
-  cases.forEach((item) => {
+  rows.forEach((item) => {
     solution(...item);
   });
 } else {
