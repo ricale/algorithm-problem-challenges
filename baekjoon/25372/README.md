@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/25372
+- title: 성택이의 은밀한 비밀번호

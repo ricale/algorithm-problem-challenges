@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/8370
+- title: Plane

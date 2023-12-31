@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/20254
+- title: Site Score
