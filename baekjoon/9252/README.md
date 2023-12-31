@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/9252
+- title: LCS 2

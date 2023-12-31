@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1916
+- title: 최소비용 구하기
