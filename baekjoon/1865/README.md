@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1865
+- title: 웜홀
