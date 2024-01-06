@@ -18,6 +18,7 @@ const rl = readline.createInterface({
 });
 
 const input = [];
+const LINE_COUNT = 3;
 
 rl.on("line", function (line) {
   input.push(line);
@@ -26,11 +27,11 @@ rl.on("line", function (line) {
     .filter((item) => !!item)
     .reduce((acc, item, i) => {
       const splitted = item.trim().split(" ");
-      const index = Math.floor(i / 2);
+      const index = Math.floor(i / LINE_COUNT);
       if (!acc[index]) {
         acc[index] = [];
       }
-      acc[index].push(...splitted);
+      acc[index].push(splitted);
 
       return acc;
     }, []);
