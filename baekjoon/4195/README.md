@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4195
+- title: 친구 네트워크

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/20040
+- title: 사이클 게임

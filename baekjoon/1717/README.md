@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1717
+- title: 집합의 표현
