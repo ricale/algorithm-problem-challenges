@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/24082
+- title: 立方体 (Cube)

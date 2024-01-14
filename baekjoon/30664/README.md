@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30664
+- title: Loteria Falha
