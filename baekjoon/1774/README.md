@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1774
+- title: 우주신과의 교감

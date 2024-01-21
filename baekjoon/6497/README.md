@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/6497
+- title: 전력난

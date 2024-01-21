@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4386
+- title: 별자리 만들기
