@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30214
+- title: An Easy-Peasy Problem

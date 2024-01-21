@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/20492
+- title: 세금
