@@ -1,0 +1,2 @@
+- Baekjoon Online Judge: https://www.acmicpc.net/user/ricale
+- LeetCode: https://leetcode.com/ricale/
