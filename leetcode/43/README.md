@@ -1,0 +1,3 @@
+- url: https://leetcode.com/problems/multiply-strings/description/
+- title: Multiply Strings
+- blog: https://ricale.kr/blog/posts/230420-algorithm-2-multiply-strings/
