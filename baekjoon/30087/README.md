@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30087
+- title: 진흥원 세미나

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/29163
+- title: Счастье Мистера Бина

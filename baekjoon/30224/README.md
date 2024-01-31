@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30224
+- title: Lucky 7

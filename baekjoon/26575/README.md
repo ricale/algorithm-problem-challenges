@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/26575
+- title: Pups

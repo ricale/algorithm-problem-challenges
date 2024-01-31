@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/29699
+- title: Welcome to SMUPC!
