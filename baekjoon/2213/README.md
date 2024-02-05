@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2213
+- title: 트리의 독립집합

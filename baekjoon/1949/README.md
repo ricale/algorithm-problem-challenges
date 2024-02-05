@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1949
+- title: 우수 마을
