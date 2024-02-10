@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30030
+- title: 스위트콘 가격 구하기

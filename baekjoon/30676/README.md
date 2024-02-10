@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30676
+- title: 이 별은 무슨 색일까

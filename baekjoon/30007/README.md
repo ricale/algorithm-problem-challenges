@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/30007
+- title: 라면 공식

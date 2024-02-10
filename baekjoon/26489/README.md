@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/26489
+- title: Gum Gum for Jay Jay

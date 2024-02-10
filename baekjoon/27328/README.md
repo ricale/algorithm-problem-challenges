@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/27328
+- title: 三方比較 (Three-Way Comparison)
