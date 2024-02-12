@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/27172
+- title: 수 나누기 게임

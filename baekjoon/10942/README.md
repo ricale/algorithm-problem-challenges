@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10942
+- title: 팰린드롬?
