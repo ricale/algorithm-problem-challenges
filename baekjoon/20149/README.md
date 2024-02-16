@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/20149
+- title: 선분 교차 3
