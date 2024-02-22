@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1069
+- title: 집으로

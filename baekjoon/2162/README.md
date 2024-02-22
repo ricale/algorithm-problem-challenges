@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2162
+- title: 선분 그룹
