@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2473
+- title: 세 용액

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2252
+- title: 줄 세우기
