@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/27331
+- title: 2 桁の整数 (Two-digit Integer)

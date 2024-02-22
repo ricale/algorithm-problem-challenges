@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/26545
+- title: Mathematics

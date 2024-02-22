@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/27434
+- title: 팩토리얼 3

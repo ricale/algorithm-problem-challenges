@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/26209
+- title: Intercepting Information

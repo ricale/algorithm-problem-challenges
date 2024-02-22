@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/31429
+- title: SUAPC 2023 Summer
