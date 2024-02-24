@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10991
+- title: 별 찍기 - 16

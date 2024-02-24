@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/13015
+- title: 별 찍기 - 23
