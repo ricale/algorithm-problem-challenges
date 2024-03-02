@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10039
+- title: 평균 점수

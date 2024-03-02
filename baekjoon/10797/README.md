@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10797
+- title: 10부제

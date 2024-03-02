@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2309
+- title: 일곱 난쟁이
