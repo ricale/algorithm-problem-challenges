@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/15655
+- title: N과 M (6)
