@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2693
+- title: N번째 큰 수

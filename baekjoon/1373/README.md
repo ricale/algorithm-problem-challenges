@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1373
+- title: 2진수 8진수

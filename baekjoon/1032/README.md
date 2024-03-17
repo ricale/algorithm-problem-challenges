@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1032
+- title: 명령 프롬프트

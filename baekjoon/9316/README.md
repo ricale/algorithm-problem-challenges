@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/9316
+- title: Hello Judge

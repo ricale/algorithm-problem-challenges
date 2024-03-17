@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1292
+- title: 쉽게 푸는 문제

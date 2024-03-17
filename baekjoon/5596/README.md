@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/5596
+- title: 시험 점수

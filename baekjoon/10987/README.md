@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10987
+- title: 모음의 개수

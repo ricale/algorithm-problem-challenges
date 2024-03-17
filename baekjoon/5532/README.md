@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/5532
+- title: 방학 숙제

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1712
+- title: 손익분기점

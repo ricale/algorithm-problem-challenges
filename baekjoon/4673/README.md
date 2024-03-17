@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/4673
+- title: 셀프 넘버
