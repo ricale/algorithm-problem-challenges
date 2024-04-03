@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11948
+- title: 과목선택

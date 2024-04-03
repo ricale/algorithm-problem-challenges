@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2083
+- title: 럭비 클럽

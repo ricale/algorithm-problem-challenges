@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11052
+- title: 카드 구매하기

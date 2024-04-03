@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10768
+- title: 특별한 날

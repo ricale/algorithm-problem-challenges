@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1094
+- title: 막대기
