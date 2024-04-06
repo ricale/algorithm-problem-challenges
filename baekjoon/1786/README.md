@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1786
+- title: 찾기
