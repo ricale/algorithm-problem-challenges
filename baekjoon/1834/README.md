@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1834
+- title: 나머지와 몫이 같은 수

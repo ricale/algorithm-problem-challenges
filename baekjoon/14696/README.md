@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/14696
+- title: 딱지놀이

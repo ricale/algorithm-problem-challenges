@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2468
+- title: 안전 영역

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1236
+- title: 성 지키기

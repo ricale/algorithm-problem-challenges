@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1977
+- title: 완전제곱수

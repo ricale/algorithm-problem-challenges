@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1100
+- title: 하얀 칸

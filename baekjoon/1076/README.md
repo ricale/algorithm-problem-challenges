@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1076
+- title: 저항

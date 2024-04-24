@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/5575
+- title: 타임 카드

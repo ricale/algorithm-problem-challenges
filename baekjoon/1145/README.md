@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1145
+- title: 적어도 대부분의 배수

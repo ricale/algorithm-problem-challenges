@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10448
+- title: 유레카 이론

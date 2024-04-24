@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/17388
+- title: 와글와글 숭고한

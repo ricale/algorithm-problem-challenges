@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/13752
+- title: 히스토그램
