@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1043
+- title: 거짓말

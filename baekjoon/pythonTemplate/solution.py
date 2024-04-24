@@ -11,3 +11,7 @@ if sys.platform != 'linux' and sys.platform != 'linux2':
 #     sys.stdin.readline().rstrip().split(' ')
 #   )
 # )
+  
+# coins = []
+# for _ in range(n):
+#   coins.append(int(sys.stdin.readline()))

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/12851
+- title: 숨바꼭질 2
