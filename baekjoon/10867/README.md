@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10867
+- title: 중복 빼고 정렬하기

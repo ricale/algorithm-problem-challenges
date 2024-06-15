@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/11004
+- title: K번째 수

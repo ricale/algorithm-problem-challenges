@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1526
+- title: 가장 큰 금민수
