@@ -5,7 +5,6 @@ function solution(N) {
   for (let i = 666; ; i++) {
     if (`${i}`.match("666")) {
       count += 1;
-      // console.log({ count, i });
       if (count === n) {
         console.log(i);
         return;

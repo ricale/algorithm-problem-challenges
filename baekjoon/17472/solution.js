@@ -28,8 +28,6 @@ function solution(n, m, rows) {
     }
   }
 
-  // console.log(rows.map((row) => row.join(" ")).join("\n"), "\n");
-
   const routes = [...new Array(islandId)].map(() => new Map());
 
   const findRoutes = (i, j) => {
@@ -77,8 +75,6 @@ function solution(n, m, rows) {
     }
   }
 
-  // console.log(routes);
-
   const queue = [];
   for (let i = 2; i < islandId; i++) {
     const map = routes[i];
@@ -106,8 +102,6 @@ function solution(n, m, rows) {
       roots[rootB] = rootA;
     }
   }
-
-  // console.log(roots);
 
   for (let i = 3; i < islandId; i++) {
     if (getRoot(2) !== getRoot(i)) {

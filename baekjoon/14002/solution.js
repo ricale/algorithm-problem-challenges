@@ -17,10 +17,6 @@ function solution([n], nums) {
     }
   }
 
-  // console.log(nums);
-  // console.log(results);
-  // console.log(max);
-
   if (max.length === 1) {
     console.log(`1\n${nums[0]}`);
   } else {

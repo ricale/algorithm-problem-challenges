@@ -27,7 +27,6 @@ function solution(n, rows) {
       }
       const start = getPairsSum(sequence, rows);
       const link = getPairsSum(bs, rows);
-      // console.log(sequence.join(" "), "   ", bs.join(" "));
       const diff = Math.abs(start - link);
       if (min > diff) {
         min = diff;
@@ -55,7 +54,6 @@ function solution(n, rows) {
   getSequences();
 
   console.log(min);
-  // console.log(minSequence);
 }
 
 //////

@@ -151,8 +151,6 @@ function getCands(i, j) {
 }
 
 function solution(n, m, rows) {
-  // console.log(n, m, rows);
-
   let max = 0;
   for (let i = 0; i < rows.length; i++) {
     for (let j = 0; j < rows[i].length; j++) {

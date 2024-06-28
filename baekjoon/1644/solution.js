@@ -16,8 +16,6 @@ function solution(n) {
   let sum = 0;
   let count = 0;
 
-  // console.log({ n });
-
   while (true) {
     if (sum < n) {
       if (r === primes.length) {
@@ -30,11 +28,8 @@ function solution(n) {
 
     if (sum === n) {
       count += 1;
-      // console.log([...new Array(r - l)].map((_, i) => primes[i + l]));
     }
   }
-
-  // console.log(">>>", primes[primes.length - 2], primes[primes.length - 1]);
 
   console.log(count);
 }

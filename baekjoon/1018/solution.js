@@ -18,7 +18,6 @@ function getCount(row, col, rows) {
             count += 1;
           }
         }
-        // console.log({ h, i, j, value, count });
       }
     }
     if (min > count) {

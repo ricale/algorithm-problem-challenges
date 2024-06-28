@@ -2,12 +2,10 @@ function solution(n, nums) {
   const result = [...nums];
 
   function merge(target, left, mid, right) {
-    // console.log(left, right, target.slice(left, right + 1));
     let l = left;
     let r = mid + 1;
     let i = left;
     while (l <= mid && r <= right) {
-      // console.log({ l }, target[l], { r }, target[r]);
       if (target[l] < target[r]) {
         result[i] = target[l];
         i += 1;

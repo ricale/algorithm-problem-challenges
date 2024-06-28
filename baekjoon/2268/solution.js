@@ -11,10 +11,6 @@ function initTree(tree, nums, node, start, end) {
 }
 
 function getSubSum(tree, targetStart, targetEnd, rangeLeft, rangeRight, node) {
-  // if (node > 10) {
-  //   return 0n;
-  // }
-  // console.log({ tree, targetStart, targetEnd, rangeLeft, rangeRight, node });
   if (targetEnd < rangeLeft || rangeRight < targetStart) {
     return 0n;
   }

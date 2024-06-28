@@ -25,7 +25,6 @@ function solution(rows) {
           stack.pop();
         }
       }
-      // console.log(c, stack.join(""));
     }
     result.push(stack.length === 0 ? "yes" : "no");
   }

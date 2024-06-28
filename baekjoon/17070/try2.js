@@ -66,20 +66,6 @@ function solution(n, rows) {
   getAnswer(n - 1, n - 1);
   const result = dp[n - 1][n - 1];
   console.log(result ? result.reduce((acc, item) => acc + item, 0) : 0);
-  // console.log(
-  //   dp
-  //     .map((row) =>
-  //       row.map((item) => (item ? item[0] + item[1] + item[2] : 0)).join(" ")
-  //     )
-  //     .join("\n")
-  // );
-  // console.log(
-  //   dp
-  //     .map((row) =>
-  //       row.map((item) => (item ? item.join(",") : "0,0,0")).join(" ")
-  //     )
-  //     .join("\n")
-  // );
 }
 
 //////

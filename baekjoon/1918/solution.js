@@ -9,7 +9,6 @@ function solution(expression) {
     for (; i > 0 && stack[i] !== "("; i--) {}
 
     const substack = stack.splice(i, stack.length - i);
-    // console.log({ substack });
 
     let sidx = substack[0] === "(" ? 1 : 0;
     while (substack.length > sidx + 1) {
@@ -48,11 +47,8 @@ function solution(expression) {
       } else {
         stack.push(item);
       }
-      // console.log({ stack });
     }
   }
-  // console.log({ expression });
-  // console.log({ stack });
 
   if (stack.length === 1) {
     console.log(stack[0]);
