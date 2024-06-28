@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2268
+- title: 수들의 합 7

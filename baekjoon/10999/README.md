@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/10999
+- title: 구간 합 구하기 2

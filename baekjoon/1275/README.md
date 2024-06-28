@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1275
+- title: 커피숍2
