@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1102
+- title: 발전소
