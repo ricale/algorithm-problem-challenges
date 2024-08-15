@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/6752
+- title: Time on task
