@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1766
+- title: 문제집
