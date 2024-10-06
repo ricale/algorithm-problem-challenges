@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1026
+- title: 보물

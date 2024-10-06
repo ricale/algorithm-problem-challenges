@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1946
+- title: 신입 사원

@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1182
+- title: 부분수열의 합

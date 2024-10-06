@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/1065
+- title: 한수
