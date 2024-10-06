@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2623
+- title: 음악프로그램
