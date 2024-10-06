@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/17435
+- title: 합성함수와 쿼리

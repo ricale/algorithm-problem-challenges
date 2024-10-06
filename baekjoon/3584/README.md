@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/3584
+- title: 가장 가까운 공통 조상
