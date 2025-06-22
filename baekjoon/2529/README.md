@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/2529
+- title: 부등호

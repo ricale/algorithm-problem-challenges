@@ -1,0 +1,2 @@
+- url: https://www.acmicpc.net/problem/6588
+- title: 골드바흐의 추측
